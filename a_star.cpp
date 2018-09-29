@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
- #include <vector>
+#include <vector>
 
 
 class node{
@@ -15,7 +15,11 @@ class node{
 		double g; // moving cost
 
 		// constructor, assign x, y, set h, g to be zero by default
-		node(int x_in_0, int y_in) {
+		node(int x_in, int y_in) {
+      x = x_in;
+      y = y_in;
+      h = 0;
+      g = 0;
 
 		}
 
