@@ -18,9 +18,9 @@ class node{
 		node(int x_in, int y_in) {
       x = x_in;
       y = y_in;
-      h = 0;
-      g = 0;
-
+			h = 10000; // h value:  h is the heuristic value
+			g = 10000; // g value: g cost, moving cost
+			f = g + h; // f value: f = g + h, final cost
 		}
 
 	};
@@ -36,7 +36,7 @@ public:
 
 	}
 
-	// randomly generating the grid
+	// randomly generating the grid, generare node fill the grid, note the symple of the node if it is occupied or empty
 	void generate_grid() {
 
 	}
@@ -47,17 +47,28 @@ public:
 	}
 
 };
-/*
+
+
+// we use a
+class f_compare() {
+
+}
+
 class A_star {
 public:
-	OccupancyGrid* map;
-	// assign the map to the solver, note the type of the input
+
+	OccupancyGrid* map; // note that we use a pointer to the built grid instead of  store a copy of the grid
+	vector< node* > final_path; // final path from the start to the final node;
+
+	vector< node* > openSet; // openSet, store the nodes that  needed to be checked
+	vector< node* > closeSet; // closeSet, store the checked node
+
+
+	// constructor, assign the input OccupancyGrid pointer to the map
 	A_star(OccupancyGrid* map_in) {
 
 
 	}
-
-	vector<node> solution;
 
 	void search(int x_0, int y_0, int x_f, int y_f) {
 
@@ -65,7 +76,7 @@ public:
 
 };
 
-*/
+
 
 int main(int argc, char const *argv[])
 {
