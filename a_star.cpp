@@ -13,14 +13,14 @@ class node{
 
 		double h; // heuristic cost
 		double g; // moving cost
-		
+
 		// constructor, assign x, y, set h, g to be zero by default
-		node(int x_in, int y_in) {
+		node(int x_in_0, int y_in) {
 
 		}
 
 	};
-// occupency grid class contsins the 
+// occupency grid class contsins the
 
 class OccupancyGrid {
 public:
@@ -43,7 +43,7 @@ public:
 	}
 
 };
-
+/*
 class A_star {
 public:
 	OccupancyGrid* map;
@@ -54,14 +54,14 @@ public:
 	}
 
 	vector<node> solution;
-	
+
 	void search(int x_0, int y_0, int x_f, int y_f) {
 
 	}
 
 };
 
-
+*/
 
 int main(int argc, char const *argv[])
 {
