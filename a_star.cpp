@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
- #include <vector>
+#include <vector>
 
 
 class node{
@@ -13,14 +13,18 @@ class node{
 
 		double h; // heuristic cost
 		double g; // moving cost
-		
+
 		// constructor, assign x, y, set h, g to be zero by default
 		node(int x_in, int y_in) {
+      x = x_in;
+      y = y_in;
+      h = 0;
+      g = 0;
 
 		}
 
 	};
-// occupency grid class contsins the 
+// occupency grid class contsins the
 
 class OccupancyGrid {
 public:
@@ -54,7 +58,7 @@ public:
 	}
 
 	vector<node> solution;
-	
+
 	void search(int x_0, int y_0, int x_f, int y_f) {
 
 	}
